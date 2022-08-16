@@ -34,7 +34,7 @@ jobs:
     runs-on: ubuntu-latest
     # 현재 Job에서 사용할 환경변수, repository setting secrets 에서 설정한 환경변수 사용
     env:
-      SONARQUBE_PROJECT_KEY: smody 
+      SONARQUBE_PROJECT_KEY: test-sonarqube-with-github
       SONARQUBE_URL: ${{ secrets.SONARQUBE_URL }}
       SONARQUBE_TOKEN : ${{ secrets.SONARQUBE_TOKEN }}
       PR_NUMBER: ${{ github.event.pull_request.number }}
